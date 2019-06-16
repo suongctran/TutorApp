@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Profile"
+    android:background="#3eaddd">
+
+    <EditText
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:id="@+id/p_status_edit_text"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <EditText
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:id="@+id/name_edit_text"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/p_status_edit_text"
+        android:layout_toRightOf="@+id/p_status_text_view"
+        android:layout_toEndOf="@+id/p_status_text_view" />
+
+    <EditText
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:id="@+id/email_edit_text"
+        android:layout_below="@+id/name_edit_text"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <EditText
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:id="@+id/address_edit_text"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <EditText
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:id="@+id/subject_edit_text"
+        android:layout_below="@+id/address_edit_text"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <EditText
+        android:layout_width="265dp"
+        android:layout_height="90dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:id="@+id/description_edit_text"
+        android:layout_below="@+id/subject_edit_text"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <EditText
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:id="@+id/rate_edit_text"
+        android:layout_alignTop="@+id/p_rate_text_view"
+        android:layout_toRightOf="@+id/p_rate_text_view"
+        android:layout_toEndOf="@+id/p_rate_text_view" />
+
+    <EditText
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:id="@+id/total_hours_edit_text"
+        android:layout_alignTop="@+id/p_th_text_view"
+        android:layout_alignLeft="@+id/rate_edit_text"
+        android:layout_alignStart="@+id/rate_edit_text" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#000000"
+        android:text="SAVE EDIT"
+        android:id="@+id/sp_saveEdit_button"
+        android:onClick="onSaveEditClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/total_hours_edit_text" />
+
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Status:"
+        android:layout_alignTop="@+id/p_status_edit_text"
+        android:layout_toLeftOf="@+id/p_status_edit_text"
+        android:layout_toStartOf="@+id/p_status_edit_text"
+        android:textAlignment="center"
+        android:id="@+id/p_status_text_view" />
+
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Name:"
+        android:textAlignment="center"
+        android:layout_below="@+id/p_status_edit_text"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Email:"
+        android:textAlignment="center"
+        android:layout_above="@+id/address_edit_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Address:"
+        android:textAlignment="center"
+        android:layout_below="@+id/email_edit_text"
+        android:layout_toLeftOf="@+id/email_edit_text"
+        android:layout_toStartOf="@+id/email_edit_text"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Subject:"
+        android:textAlignment="center"
+        android:layout_below="@+id/address_edit_text"
+        android:textIsSelectable="false"
+        android:id="@+id/textView6" />
+
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Description:"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:id="@+id/p_des_text_view"
+        android:layout_below="@+id/subject_edit_text"
+        android:layout_toLeftOf="@+id/address_edit_text"
+        android:layout_toStartOf="@+id/address_edit_text" />
+
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Rate:"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:id="@+id/p_rate_text_view"
+        android:layout_below="@+id/description_edit_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Total Hours:"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:id="@+id/p_th_text_view"
+        android:layout_below="@+id/rate_edit_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#000000"
+        android:text="BACK"
+        android:id="@+id/back_profile_button"
+        android:layout_alignBottom="@+id/sp_saveEdit_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onBackClick"/>
+
+</RelativeLayout>

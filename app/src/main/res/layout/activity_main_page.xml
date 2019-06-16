@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="missingPrefix"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cs480teamavatar.cs480androidapp.MainPage"
+    android:background="#3eaddd">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/main"
+        android:id="@+id/imageView"
+        android:layout_alignTop="@+id/onSessionClick"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="PROFILE"
+        android:id="@+id/profile_button"
+        android:onClick="onClickProfile"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#000"
+        android:layout_below="@+id/invalid_search_text"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="SESSION"
+        android:id="@+id/onSessionClick"
+        android:onClick="onSessionClick"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#000"
+        android:layout_below="@+id/profile_button"
+        android:layout_alignLeft="@+id/profile_button"
+        android:layout_alignStart="@+id/profile_button" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#000"
+        android:text="LOGOUT"
+        android:id="@+id/button"
+        android:onClick="onLogoutClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/profile_button"
+        android:layout_alignStart="@+id/profile_button" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:id="@+id/search_edit_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:background="#fff"
+        android:backgroundTint="#cdffffff"
+        android:layout_toLeftOf="@+id/search_button"
+        android:layout_toStartOf="@+id/search_button" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="SEARCH"
+        android:id="@+id/search_button"
+        android:onClick="onSearchClick"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#000"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_above="@+id/invalid_search_text"
+        android:layout_toRightOf="@+id/invalid_search_text"
+        android:layout_toEndOf="@+id/invalid_search_text" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:id="@+id/invalid_search_text"
+        android:text="Subject does not exist. Try again."
+        android:textColor="#FF0000"
+        android:layout_below="@+id/search_edit_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

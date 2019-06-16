@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cs480teamavatar.cs480androidapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".StartUp"
+            android:label="Team Avatar Tutor App">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginPage"
+            android:label=""/>
+        <activity
+            android:name=".RegisterPage"
+            android:label=""/>
+        <activity
+            android:name=".MainPage"
+            android:label=""/>
+        <activity
+            android:name=".Profile"
+            android:label=""/>
+        <activity
+            android:name=".ViewProfile"
+            android:label=""/>
+        <activity
+            android:name=".Session"
+            android:label=""/>
+        <activity
+            android:name=".TutorList"
+            android:label=""/>
+        <activity
+            android:name=".SetAppointment"
+            android:label=""/>
+    </application>
+
+</manifest>
